@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        
+        <title>Winter Smashup</title>
+        
+        <style>
+        
+                * { margin: 0; padding: 0; }
+        
+                #bg { position: fixed; top: 0; left: 0; }
+                .bgwidth { width: 100%; }
+                .bgheight { height: 100%; }
+                
+                #page-wrap { position: relative; width: 400px; margin: 0px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+                #video { position: relative; width: 560px; margin: 140px auto; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; margin-bottom: -2px; }
+                  #convert { position: relative; width: 560px; margin: 140px auto; margin-top:10px;  }
+                p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+        </style>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+        <script>
+                $(function() {   
+                
+                        var theWindow        = $(window),
+                            $bg              = $("#bg"),
+                            aspectRatio      = $bg.width() / $bg.height();
+                                                                
+                        function resizeBg() {
+                                
+                                if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+                                    $bg
+                                        .removeClass()
+                                        .addClass('bgwidth');
+                                } else {
+                                    $bg
+                                        .removeClass()
+                                        .addClass('bgwidth');
+                                }
+                                                        
+                        }
+                                                                
+                        theWindow.resize(function() {
+                                resizeBg();
+                        }).trigger("resize");
+                
+                });
+        </script>
+
+</head>
+
+<body>
+        <img src="http://raw.githubusercontent.com/cozza13/highfidelitystuff/master/winterscene/webpage/image/home.jpg" id="bg" alt="">
+         <div id="video"> <iframe width="560" height="315" src="http://www.youtube.com/embed/GQAjJaHNjD0?rel=0&amp;autohide=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+         </div>
+         
+      <div id="convert"><center><a href="getincontact.html">
+        <img src="http://converter.tipodean.com/images/contact-us.png" /></a>
+</div>
+     
+
+</body>
+
+</html>

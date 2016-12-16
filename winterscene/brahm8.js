@@ -14,7 +14,7 @@
   
     _this.leaveEntity = function(entityID) {
         print('I am outsidee');
-        Audio.stop(injector);
+        injector.stop();
         print("Reverb is OFF.");
     };
 })

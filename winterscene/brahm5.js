@@ -2,11 +2,6 @@
   var _this = this;
   // const GAME_CHANNEL = 'winterSmashUpGame';
 
-  Script.include("http://public.highfidelity.io/scripts/utilities/tools/cookies.js");
-
- var sound = SoundCache.getSound("https://s3.amazonaws.com/converter.tipodean.com/sounds/Brahms_Sym1-ambiX.wav");
-var injector = Audio.playSound(sound, { loop: true, volume: 1.0 });
- 
 
 
 

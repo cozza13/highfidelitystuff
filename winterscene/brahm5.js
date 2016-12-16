@@ -31,7 +31,7 @@ var injector = Audio.playSound(sound, { loop: true, volume: 1.0 });
   
  _this.leaveEntity = function(entityID) {
     print('I am outsidee');
-   Audio.stop(injector);
+   injector.stop();
   //Audio.stopInjector(injector);
    
     print("Reverb is OFF.");
